@@ -66,13 +66,16 @@ class PreProcessing:
     """
     def organize_data(self, data: pd.DataFrame, name: str) -> pd.DataFrame:
 
+        # dumping duplicated rows
         rows = len(data)
         data.drop_duplicates(inplace=True)
         print(f"Removed {rows - len(data)} Duplicates...")
 
+        # dumping non-numerical vals
         data.dropna(how='all', inplace=True)
         print(f"Removed non-numerical values from the data.")
 
+        # ignoring white space
         for col in data.select_dtypes(include=['object']).columns:
             data[col] = data[col].str.strip()
 
@@ -81,13 +84,15 @@ class PreProcessing:
             if data[col].dtype == 'object':
 
                 try:
-
+                    
+                    # type conversion
                     data[col] = pd.to_numeric(data[col])
                 
                 except ValueError:
                     
                     pass
 
+        # organizing the data-frames of each key feature
         if name == 'runs':
 
             if 'Run Count' in data.columns:
@@ -120,10 +125,13 @@ class PreProcessing:
         
         try:
 
+            # merging run count and price data
             merged_data = pd.merge(self.run_count_dataframe, self.price_dataframe, on='Resort ID', how='outer')
 
+            # merging run-price merge with elevation
             merged_data = pd.merge(merged_data, self.elevation_dataframe, on="Resort ID", how='outer')
 
+            # handling missing data
             missing_runs = merged_data[merged_data['Run Count'].isna()]['Resort']
             missing_prices = merged_data[merged_data['Price (USD)'].isna()]['Resort']
             missing_elevation = merged_data[merged_data['Peak Elevation (m)'].isna()]['Resort']
@@ -142,6 +150,7 @@ class PreProcessing:
 
             print(f"Input Data Merged!")
 
+            # return merged data-set
             self.merged_data = merged_data
             return self.merged_data
         
@@ -166,6 +175,7 @@ class PreProcessing:
         print("Missing Values:")
         print(missing_data[missing_data > 0])
 
+        # handling missing values under each feature
         if 'Run Count' in data.columns:
 
             data['Run Count'] = data['Run Count'].fillna(data['Run Count'].median())
@@ -184,6 +194,7 @@ class PreProcessing:
             
             data[col] = data[col].fillna(data[col].mode()[0])
 
+        # extra-cautionary checking for missing data
         double_check = data.isnull().sum()
         print("\nMissing Values:")
         print(double_check[double_check > 0])
@@ -209,11 +220,13 @@ class PreProcessing:
 
         data_columns = normalized.select_dtypes(include=['int64', 'float64']).columns
 
+        # min-max scaling price data
         if 'Price (USD)' in data_columns:
 
             min_max_scaler = MinMaxScaler()
             normalized['Price (USD)'] = min_max_scaler.fit_transform(normalized[['Price (USD)']])
 
+        # normalizing run-count and peak elevation via the z-score method
         for col in ['Run Count', 'Peak Elevation (m)']:
 
             if col in data_columns:
@@ -238,6 +251,7 @@ class PreProcessing:
 
         valid = True
 
+        # validating column headers
         data_columns = ['Resort ID', 'Resort', 'Country', 'Run Count', 'Price (USD)', 'Peak Elevation (m)']
         missing_columns = set(data_columns) - set(data.columns)
 
@@ -246,12 +260,14 @@ class PreProcessing:
             print(f"Columns of Data Missing: {', '.join(missing_columns)}")
             valid = False
 
+        # validating existing data vals
         if data.isnull().any().any():
 
             print("Ran into an Error: There are Missing Values...")
             print(data.isnull().sum())
             valid = False
 
+        # validating data types
         data_types = {
             'Resort ID': 'int64',
             'Resort': 'object',
@@ -270,6 +286,7 @@ class PreProcessing:
                     print(f"Ran into an Error: Column '{col}' has Data Type {data[col].dtype}, but Expected {expected_data_type}")
                     valid = False
 
+        # validating value signs
         if 'Run Count' in data.columns and (data['Run Count'] < 0).any():
 
             print("Ran into an Error: Run Count contains negative values...")
@@ -285,11 +302,13 @@ class PreProcessing:
             print("Ran into an Error: Peak Elevation contains negative values...")
             valid = False
 
+        # validating that each resort has a unique ID#
         if 'Resort ID' in data.columns and not data['Resort ID'].is_unique:
 
             print("Ran into an Error: Resort ID # is not valid...")
             valid = False
 
+        # validating country assignments
         if 'Country' in data.columns:
 
             if not all(data['Country'].isin(['United States', 'Canada'])):
@@ -308,6 +327,12 @@ class PreProcessing:
         return valid
 
 
+    """
+    This function serves to writing the manipulated input data to a new CSV file that will be
+    used as input for sorting and computing the weighted sum
+    @param data: the individual frames of data being written
+    @param output_file: the new CSV to receive the data as output-input
+    """
     def write_csv(self, data: pd.DataFrame, output_file: str) -> None:
 
         try:
@@ -315,6 +340,7 @@ class PreProcessing:
             os.makedirs(os.path.dirname(output_file), exist_ok=True)
 
             data.to_csv(output_file, index=False)
+            print(f"Pre-Processed Data Written to: {output_file}")
 
         except IOError as e:
 
@@ -357,9 +383,8 @@ class PreProcessing:
 
             pre_processed_data = normalized_data
 
-            output_file = "data-sets/processed-resorts-data.csv"
+            output_file = ("data-sets", "processed-resorts-data.csv")
             self.write_csv(pre_processed_data, output_file)
-            print(f"Processed Data Saved to CSV: {output_file}")
 
             return pre_processed_data
 
