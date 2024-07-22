@@ -31,10 +31,11 @@ find the mountain with the highest elevation (thus, the best snow), this program
             PIP should now be installed.
 ### Unix/Linux Users Only
 3. Configure the Shell Script.
-    - The shell script located in SummitSelect/src will need a couple commands entered into the terminal before it will be an executable.
-        1. CD into /src (`cd path/to/file/SummitSelect/src`)
+    - The shell script located in `SummitSelect/src` will need a couple commands entered into the terminal before it will be an executable.
+        1. CD into `/SummitSelect` (`cd path/to/file/SummitSelect`)
         2. Type and enter `chmod +x run_code.sh` and enter your password if/when prompted.
         3. run_code.sh should now be executable. Type and enter `./run_code.sh` to run the shell script.
+        4. Additionally: You yourself *might* have to edit the shell script, depending on where in your system your python interpreter is located. If you must, you'll be editing line 3.
 4. Alternatively, in your terminal, cd into /src (`cd path/to/file/SummitSelect/src`), and then type and enter `python3 FortuneCookieClassifier.py`, allow the program to complete execution, then type and enter `python3 OCR_MutliClassifier.py`. This does the exact same thing as the shell script.
 Important: Make sure you're in `./src` if you're going to run the `.py` files manually.
 ## Resources Used
