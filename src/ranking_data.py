@@ -20,9 +20,9 @@ class RankingSkiResorts:
     """
     def __init__(self, data: pd.DataFrame):
 
-        if not isinstance(data, pd.DataFrame):
+        # if not isinstance(data, pd.DataFrame):
 
-            raise TypeError("Input data needs to be a DataFrame...")
+        #     raise TypeError("Input data needs to be a DataFrame...")
         
         data_columns = ['Resort ID', 'Resort', 'Country', 'Run Count', 'Price (USD)', 'Peak Elevation (m)']
         missing_cols = set(data_columns) - set(data.columns)
@@ -53,6 +53,7 @@ class RankingSkiResorts:
         try:
 
             sorted_data = self.data.sort_values(by='Run Count', ascending=ascending)
+            # adding a new ranking column
             sorted_data['Run Count Ranking'] = range(1, len(sorted_data) + 1)
 
             data_columns = ['Run Count Ranking', 'Resort ID', 'Resort', 'Country', 'Run Count']
@@ -119,7 +120,7 @@ class RankingSkiResorts:
             sorted_data = self.data.sort_values(by='Peak Elevation (m)', ascending=ascending)
             sorted_data['Elevation Ranking'] = range(1, len(sorted_data) + 1)
 
-            data_columns = ['Elevation Ranking', 'Resort_ID', 'Resort', 'Country', 'Peak Elevation (m)']
+            data_columns = ['Elevation Ranking', 'Resort ID', 'Resort', 'Country', 'Peak Elevation (m)']
             self.elevation_ranking = sorted_data[data_columns]
 
             print(f"Sorted by Peak Elevation ({'ascending' if ascending else 'descending'} Order...)")
@@ -140,35 +141,39 @@ class RankingSkiResorts:
     @param user_criteria: users' selected feature (runs, prices, elevation)
     @param ascending: If false, constructs a ranking from "I care" to "I don't care"
     """
-    def criteria(self, user_criteria, ascending=False) -> pd.DataFrame:
+    def criteria(self, input_yes_runs=True, input_yes_price=True, input_yes_elevation=True) -> pd.DataFrame:
 
         if self.data is None:
 
             raise ValueError("Could not Find Data...")
         
-        hash = {
-            'runs': ('Run Count', 'Run Count Ranking', self.sorting_by_run_count),
-            'price': ('Price (USD)', 'Price Ranking', self.sorting_by_price),
-            'elevation': ('Peak Elevation (m)', 'Elevation Ranking', self.sorting_by_elevation)
-        }
+        ranking_data['Score'] = 0
 
-        if user_criteria.lower() not in hash:
+        # using user-input to calculate feature scores
+        if input_yes_price:
 
-            raise ValueError("Criteria Not Valid. Choose Between 'runs', 'price', and/or 'elevation'!")
-        
-        column, ranking_column, sorting = hash[user_criteria.lower()]
+            price_rank = self.sorting_by_price()['Price Rank']
+            # calculated to where the lower the price, the higher the score
+            ranking_data['Score'] += price_rank.max() - price_rank + 1
 
-        if user_criteria.lower() == 'price':
+        if input_yes_runs:
 
-            ranking = sorting(not ascending)
+            run_rank = self.sorting_by_run_count()['Run Count Rank']
+            ranking_data['Score'] += run_rank.max() - run_rank + 1
 
-        else:
+        if input_yes_elevation:
 
-            ranking = sorting(ascending)
+            elevation_rank = self.sorting_by_elevation()['Elevation Rank']
+            ranking_data['Score'] += elevation_rank.max() - elevation_rank + 1
 
-        print(f"Constructed Ranking Based on User Preference {user_criteria} ({'ascending' if ascending else 'descending'} Order...)")
+        # sorting the data based on the scores
+        ranking_data = ranking_data.sort_values('Score', ascending=False).reset_index(drop=True)
+        ranking_data['Overall Rank'] = ranking_data.index + 1
 
-        return ranking
+        data_columns = ['Overall Rank', 'Resort ID', 'Resort', 'Country', 'Run Count', 'Price (USD)', 'Peak Elevation (m)', 'Score']
+        final_ranking = ranking_data[data_columns]
+
+        return final_ranking
     
 
     """
@@ -179,9 +184,9 @@ class RankingSkiResorts:
     """
     def return_ranking(self, ranking: pd.DataFrame, n=10) -> pd.DataFrame:
 
-        if not isinstance(ranking, pd.DataFrame):
+        # if not isinstance(ranking, pd.DataFrame):
 
-            raise TypeError("Ranking needs to be in a DataFrame...")
+        #     raise TypeError("Ranking needs to be in a DataFrame...")
         
         if ranking.empty:
 
@@ -215,6 +220,7 @@ class RankingSkiResorts:
     """
     def final_list(self, run_count_weight: float = 0.33, price_weight: float = 0.33, elevation_weight: float = 0.33, n: int = 10) -> pd.DataFrame:
 
+        # validation computation
         if not np.isclose(run_count_weight + price_weight + elevation_weight, 1.0):
 
             raise ValueError("Weights Do Not Add Up to 1, This is an Error...")
@@ -222,7 +228,8 @@ class RankingSkiResorts:
         if any(w < 0 for w in [run_count_weight, price_weight, elevation_weight]):
 
             raise ValueError("Weights Found to be Negative, This is an Error...")
-        
+
+        # feature rankings
         run_ranking = self.sorting_by_run_count()
         price_ranking = self.sorting_by_price()
         elevation_ranking = self.sorting_by_elevation()
@@ -238,12 +245,14 @@ class RankingSkiResorts:
 
             run_count_weight * (compute_final_ranking['Run Count Ranking'].max() - compute_final_ranking['Run Count Ranking'] + 1) / compute_final_ranking['Run Count Ranking'].max() +
             price_weight * (compute_final_ranking['Price Ranking'].max() - compute_final_ranking['Price Ranking'] + 1) / compute_final_ranking['Price Ranking'].max() +
-            elevation_weight * (compute_final_ranking['Price Ranking'].max() - compute_final_ranking['Elevation Ranking'] + 1) / compute_final_ranking['Elevation Ranking'].max()
+            elevation_weight * (compute_final_ranking['Elevation Ranking'].max() - compute_final_ranking['Elevation Ranking'] + 1) / compute_final_ranking['Elevation Ranking'].max()
 
         )
 
+        # computing the final ranking by combining the weighted scores
         final_ranking = compute_final_ranking.sort_values('Scores', ascending=False).reset_index(drop=True)
-        final_ranking['Final List', 'Resort ID', 'Resort', 'Country', 'Country', 'Run Count', 'Price (USD)', 'Peak Elevation (m)', 'Scores']
+        final_ranking['Overall Ranking'] = final_ranking.index + 1
+        final_ranking = final_ranking[['Overall Ranking', 'Resort ID', 'Resort', 'Country', 'Country', 'Run Count', 'Price (USD)', 'Peak Elevation (m)', 'Scores']]
 
         print(f"Final Ranked List of Top {len(final_ranking)} Resorts Constructed!")
         
