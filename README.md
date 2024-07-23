@@ -85,3 +85,72 @@ program, the Weighted Sum Model, or also known as the Multi Criteria Decision Ma
 
 $`A_i^{WSM-score} = \sum_{j=1}^n w_j a_{ij}`$, for $`i = 1, 2, 3, ..., m`$
 Where m represents the different features, and n is the decision criteria. $`w_j`$ denotes the weights and $`a_ij`$ denotes the performance value, which we substitute with the results of z-score normalization.
+
+### Results
+**First 10 Resorts in Post-Data Pre-Processing**
+`Resort ID,Resort_x,Country_x,Run Count,Resort_y,Country_y,Price (USD),Resort,Country,Peak Elevation (m)
+1,Red Mountain,Canada,0,Red Mountain,Canada,0.6208530805687205,Red Mountain,Canada,0.3120158414705041
+2,Arapahoe Basin,United States,0,Arapahoe Basin,United States,0.4123222748815167,Arapahoe Basin,United States,1.5185368683061593
+3,Panorama,Canada,0,Panorama,Canada,0.5971563981042654,Panorama,Canada,0.0024763162021470314
+4,Jackson Hole,United States,0,Jackson Hole,United States,0.7488151658767772,Jackson Hole,United States,0.8727733759359662
+5,Crested Butte,United States,0,Crested Butte,United States,0.44549763033175355,Crested Butte,United States,1.429944521419009
+6,Park City,United States,3,Park City,United States,0.9905213270142181,Park City,United States,0.7276100123618401
+7,Mt. Rose,United States,0,Mt. Rose,United States,0.6255924170616114,Mt. Rose,United States,0.6294112664146371
+8,Sun Peaks,Canada,0,Sun Peaks,Canada,0.6445497630331753,Sun Peaks,Canada,0.30454419775713
+9,Fernie,Canada,1,Fernie,Canada,0.6445497630331753,Fernie,Canada,0.24904055874349354
+10,Mt. Baker,United States,0,Mt. Baker,United States,0.27488151658767773,Mt. Baker,United States,0.8990735618070435`
+- We can see in these results, the values of each piece of criteria have been normalized and prepared for ranking.
+
+**First 5 Resorts After Each Criteria Has Been Ranked (Based on a 'Yes', 'Yes', 'No' Set of Preferences, Respectively)**
+`Top Five Resorts, Sorted by runs:
+ Run Count Ranking  Resort ID    Resort       Country  Run Count
+                 1         39  Snowmass United States          3
+                 2         29      Vail United States          3
+                 3          6 Park City United States          3
+                 4         38   Big Sky United States          3
+                 5         22  Whistler        Canada          2
+Top Five Resorts, Sorted by price:
+ Price Ranking  Resort ID                  Resort       Country  Price (USD)
+             1         87             Sandia Peak United States     0.000000
+             2         86 Montage Mountain Resort United States     0.033175
+             3         64        49 Degrees North United States     0.075829
+             4         99              White Pine United States     0.080569
+             5         34        Mt. Hood Meadows United States     0.099526
+Top Five Resorts, Sorted by elevation:
+ Elevation Ranking  Resort ID                   Resort       Country  Peak Elevation (m)
+                 1         86  Montage Mountain Resort United States            1.892802
+                 2         63 Mont-Sainte-Anne-Beaupre        Canada            1.672922
+                 3         91                Le Massif        Canada            1.666518
+                 4         32             Breckenridge United States            1.650892
+                 5         72          Ayeska-Girdwood United States            1.630227`
+
+**First 5 Resorts From the Final Output**
+`1 Rank: Sandia Peak
+ Run Count: 1
+ Price (USD): $0.00
+ Peak Elevation (m): 0
+
+2 Rank: White Pine
+ Run Count: 1
+ Price (USD): $0.08
+ Peak Elevation (m): 0
+
+3 Rank: Bluewood Ski Area
+ Run Count: 1
+ Price (USD): $0.10
+ Peak Elevation (m): 0
+
+4 Rank: Tamarack
+ Run Count: 1
+ Price (USD): $0.48
+ Peak Elevation (m): 0
+
+5 Rank: Mt. Hood Meadows
+ Run Count: 0
+ Price (USD): $0.10
+ Peak Elevation (m): 0`
+- This has been taken directly from `Ski_Resorts_Results.txt`, while the individual rankings were taken directly from console output.
+- In our final result of a 'yes', 'yes', 'no' set of user preferences, the largest factor in ranking the resorts is found to be pricing.
+    - So while we do want to find resorts with a higher number of runs, wanting to achieve the lowest possible price takes precedence.
+- Something about this which I would like to note, this result might differ if I took a different approach with taking in user input.
+    - I think if I were to instead have user input be on a spectrum (Say for Price, the user can enter 'Absolutely', 'Yes', 'Average', 'Don't Care', 'Don't Care At All), and have the same type of answering for the other criteria, then perhaps the results would be less bias towards another.
