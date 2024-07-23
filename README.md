@@ -82,5 +82,5 @@ Once the new input file is created, we come to the real meat and potatoes of thi
 program, the Weighted Sum Model, or also known as the Multi Criteria Decision Making Model. This model takes in multiple possible pieces of data that relate to a list of items, as we have in our dataset (run count, price, elevation) for each resort, and determines the best item based on the order of scoring for each criteria. The score for each criteria is used to compute a total overall score, and that is how, in this program, each resort is ranked in the final list that is written to the output file.
 
 **Weighted Sum Model**
-$$`A_i^WSM-score = \sum_{j=1}^n w_j a_ij , for i = 1, 2, 3, ..., m`$$
+$`A_i^WSM-score = \sum_{j=1}^n w_j a_ij`$, for $`i = 1, 2, 3, ..., m`$
 Where m represents the different features, and n is the decision criteria. $`w_j`$ denotes the weights and $`a_ij`$ denotes the performance value, which we substitute with the results of z-score normalization.
