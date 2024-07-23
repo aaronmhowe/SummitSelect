@@ -29,6 +29,7 @@ class SummitSelect_Main:
 
         self.preprocessor = PreProcessing(run_count_data, price_data, elevation_data)
 
+        self.data = None
         self.rank = None
         self.weighted_model = None
         
@@ -49,6 +50,7 @@ class SummitSelect_Main:
 
             print("Processing Data...")
             self.processed_data = self.preprocessor.pre_process_data()
+            self.data = self.processed_data
             print("Data Successfully Processed!")
 
             self.rank = RankingSkiResorts(self.processed_data)
@@ -108,21 +110,15 @@ class SummitSelect_Main:
                        been initialized
     @raise Exception: Errors while developing the overall ranking
     """
-    def create_final_ranking(self, rankings: dict) -> pd.DataFrame:
+    def create_final_ranking(self, run_pref: bool, price_pref: bool, elevation_pref: bool) -> pd.DataFrame:
 
         if self.weighted_model is None:
-
             raise ValueError("The Class 'WeightedSumModel' Has Not Been Properly Initialized...")
         
         try:
-
-            print("\nPlease specify your preferences to determing a list of desirable resorts.")
-
             # retrieving the user's selected preferences
-            self.weighted_model.feature_weights()
-
             print("\nCurating a list of resorts...")
-
+            self.weighted_model.set_preferences(run_pref, price_pref, elevation_pref)
             self.weighted_model.normalize_data()
             self.weighted_model.weighted_sum_model()
 
@@ -147,7 +143,7 @@ class SummitSelect_Main:
     @param output_file: The variable holder for the output file to dump the results into
     @raise Exception: Errors while writing to a file
     """
-    def dump_output(self, rankings: dict, final_ranking: dict, output_file: str = "Ski_Resort_Results.txt") -> None:
+    def dump_output(self, rankings: dict, final_ranking: pd.DataFrame, output_file: str) -> None:
 
         try:
 
@@ -162,35 +158,27 @@ class SummitSelect_Main:
                 f.write("-" * 40 + "\n")
 
                 for _, resort in final_ranking.iterrows():
-
-                    f.write(f"{resort['Rank']} Rank: {resort['Resort']}\n")
+                    f.write(f"{int(resort['Rank'])} Rank: {resort['Resort']}\n")
                     f.write(f" Run Count: {resort['Run Count']}\n")
                     f.write(f" Price (USD): ${resort['Price (USD)']:.2f}\n")
-                    f.write(f" Peak Elevation (m): {resort['Peak Elevation (m)']:.0f}m\n")
-                    f.write(f" Total Score: {resort['Total Score']:.4f}\n\n")
+                    f.write(f" Peak Elevation (m): {int(resort['Peak Elevation (m)'])}\n")
+                    f.write(f" Total Score: {resort['Total Weighted Score']:.4f}\n\n")
 
                 f.write("\nHow Each Feature Ranks Based on Your Preferences:\n")
                 f.write("-" * 40 + "\n")
 
                 for criterion, ranking in rankings.items():
-
                     f.write(f"\nTop 10 Resorts By {criterion.capitalize()}:\n")
 
                     for i, (_, resort) in enumerate(ranking.head(10).iterrows(), 1):
-
                         f.write(f"{i}. {resort['Resort']} - ")
 
                         if criterion == 'runs':
-
-                            f.write(f"{resort['Run Count']} runs\n")
-
+                            f.write(f"{int(resort['Run Count'])} runs\n")
                         elif criterion == 'price':
-
                             f.write(f"${resort['Price (USD)']:.2f}\n")
-
                         elif criterion == 'elevation':
-
-                            f.write(f"{resort['Peak Elevation (m)']:.0f} meters\n")
+                            f.write(f"{int(resort['Peak Elevation (m)'])} meters\n")
 
             print(f"Houston, we have output in {output_file}...")
 
@@ -207,7 +195,7 @@ class SummitSelect_Main:
     @raise FileNotFoundError: Error indicating there's an input file missing.
     @raise Exception: Errors when executing the list development from the input data.
     """
-    def run(self):
+    def run(self, output_file):
 
         try:
 
@@ -216,21 +204,29 @@ class SummitSelect_Main:
             print("We analyze data for the number of runs, price per lift ticket, and peak elevation from 100 different resorts across North America.")
             print("We will now curate your list...")
 
-            print("Processing your preferences...")
             processed_data = self.process_data()
             print("Processing Step Complete.\n")
+
+            print("Please Specify Your Preferences: ")
+            run_count_preference = input("Are you looking for a resort with a higher number of runs? (Yes/No): ").lower() == 'yes'
+            price_preference = input("Are you looking for cheaper lift ticket prices? (Yes/No): ").lower() == 'yes'
+            elevation_preference = input("Are you looking for a resort with a higher peak elevation? (Yes/No): ").lower() == 'yes'
 
             print("Now ranking each feature based on your preferences...")
             rankings = self.create_rankings(processed_data)
             print("Rankings Developed.\n")
 
             print("Now developing a ranked list of resorts curated to your preferences...")
-            final_ranking = self.create_final_ranking(rankings)
+            final_ranking = self.create_final_ranking(run_count_preference, price_preference, elevation_preference)
             print("List Created Successfully.\n")
 
             print("Sending your list to the output folder...")
-            output_file = self.args.output
-            self.dump_output(rankings, final_ranking, output_file)
+            
+            try:
+                self.dump_output(rankings, final_ranking, output_file)
+            except Exception as e:
+                print(f"Ran into an Error: Problem occurred writing to the output file... {str(e)}")
+                print("Execution Will Continue.")
 
             print(f"\nSee '{output_file}' for your curated list.")
 
@@ -279,19 +275,15 @@ Main Application Function
 def main():
 
     try:
-
         args = add_args()
         app = SummitSelect_Main(args.run_count_data, args.price_data, args.elevation_data)
-        app.args = args
-        app.run()
+        app.run(args.output)
 
     except KeyboardInterrupt:
-
         print("\nUser Ended Program Functions. Program Will Now Exit.")
         sys.exit(1)
 
     except Exception as e:
-
         print("\nRan into an Error: Problem occurred during program execution. Please see error code for details.")
         print(f"Error Code: {str(e)}")
         print(f"Program Will Now Exit.")
