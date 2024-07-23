@@ -39,7 +39,27 @@ find the mountain with the highest elevation (thus, the best snow), this program
 4. Alternatively, in your terminal, cd into /src (`cd path/to/file/SummitSelect/src`), and then type and enter `python3 FortuneCookieClassifier.py`, allow the program to complete execution, then type and enter `python3 OCR_MutliClassifier.py`. This does the exact same thing as the shell script.
 Important: Make sure you're in `./src` if you're going to run the `.py` files manually.
 ## Resources Used
-List of resources coming soon...
+### Original Dataset
+https://www.kaggle.com/datasets/ulrikthygepedersen/ski-resorts/code
+### North American Ski Resort Price Data:
+https://www.onthesnow.com/north-america/lift-tickets
+### Pandas
+https://pandas.pydata.org/docs/user_guide/10min.html
+### Data Pre-Processing
+https://www.geeksforgeeks.org/data-preprocessing-machine-learning-python/# 
+### Developing a Ranking System
+https://www.stratascratch.com/blog/methods-for-ranking-in-pandas/ 
+- Referenced Code From:
+    https://github.com/Didayolo/ranky/blob/master/ranky/ranking.py 
+### Weighted Sum Model
+https://www.geeksforgeeks.org/weighted-sum-method-multi-criteria-decision-making/
+https://www.youtube.com/watch?v=iAr4tGEYQZ0&ab_channel=HigherMathematicsLearning
+https://www.youtube.com/watch?v=EGf9bUgl3R8&ab_channel=labmao 
+### Merging Dataframes
+https://pandas.pydata.org/docs/user_guide/merging.html
+### Argument Parsing in Python Usig argparse
+https://www.geeksforgeeks.org/command-line-option-and-argument-parsing-using-argparse-in-python/
+https://www.youtube.com/watch?v=88pl8TuuKz0&ab_channel=NeuralNine 
 # Project Report
 Report coming soon, containing a more in-depth project overview, why I chose to pursue the project,
 algorithm analysis, and more...
