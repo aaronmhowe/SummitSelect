@@ -1,0 +1,101 @@
+Resort ID,Resort_x,Country_x,Run Count,Resort_y,Country_y,Price (USD),Resort,Country,Peak Elevation (m)
+1,Red Mountain,Canada,0,Red Mountain,Canada,0.6208530805687205,Red Mountain,Canada,0.3120158414705041
+2,Arapahoe Basin,United States,0,Arapahoe Basin,United States,0.4123222748815167,Arapahoe Basin,United States,1.5185368683061593
+3,Panorama,Canada,0,Panorama,Canada,0.5971563981042654,Panorama,Canada,0.0024763162021470314
+4,Jackson Hole,United States,0,Jackson Hole,United States,0.7488151658767772,Jackson Hole,United States,0.8727733759359662
+5,Crested Butte,United States,0,Crested Butte,United States,0.44549763033175355,Crested Butte,United States,1.429944521419009
+6,Park City,United States,3,Park City,United States,0.9905213270142181,Park City,United States,0.7276100123618401
+7,Mt. Rose,United States,0,Mt. Rose,United States,0.6255924170616114,Mt. Rose,United States,0.6294112664146371
+8,Sun Peaks,Canada,0,Sun Peaks,Canada,0.6445497630331753,Sun Peaks,Canada,0.30454419775713
+9,Fernie,Canada,1,Fernie,Canada,0.6445497630331753,Fernie,Canada,0.24904055874349354
+10,Mt. Baker,United States,0,Mt. Baker,United States,0.27488151658767773,Mt. Baker,United States,0.8990735618070435
+11,Wenatchee-Mission Ridge,United States,0,Wenatchee-Mission Ridge,United States,0.3127962085308057,Wenatchee-Mission Ridge,United States,0.3088137084504866
+12,Steamboat,United States,1,Steamboat,United States,0.7630331753554502,Steamboat,United States,0.911198972176176
+13,Mount Washington,Canada,0,Mount Washington,Canada,0.3364928909952607,Mount Washington,Canada,0.8318287683866762
+14,Kicking Horse,Canada,0,Kicking Horse,Canada,0.5260663507109005,Kicking Horse,Canada,0.08825078603168177
+15,Mt. Bachelor,United States,0,Mt. Bachelor,United States,0.4028436018957346,Mt. Bachelor,United States,0.4223399977868396
+16,Northstar California,United States,0,Northstar California,United States,0.8815165876777253,Northstar California,United States,0.273974501192696
+17,Schweitzer Mountain,United States,0,Schweitzer Mountain,United States,0.3649289099526067,Schweitzer Mountain,United States,0.44543805063789943
+18,Heavenly,United States,0,Heavenly,United States,0.8341232227488153,Heavenly,United States,0.7393511667685708
+19,Big White,Canada,0,Big White,Canada,0.5497630331753556,Big White,Canada,0.08786653006928002
+20,Loveland,United States,0,Loveland,United States,0.26540284360189575,Loveland,United States,1.6049944598466315
+21,Stratton,United States,0,Stratton,United States,0.5023696682464456,Stratton,United States,1.2662514814357153
+22,Whistler,Canada,2,Whistler,Canada,0.9336492890995263,Whistler,Canada,0.08893390774261918
+23,Bald Mountain-Sun Valley,United States,0,Bald Mountain-Sun Valley,United States,0.9810426540284363,Bald Mountain-Sun Valley,United States,0.4490244396203186
+24,Winter Park Resort,United States,1,Winter Park Resort,United States,0.44549763033175355,Winter Park Resort,United States,1.396855813545495
+25,Alta,United States,0,Alta,United States,0.7156398104265405,Alta,United States,0.904794706136141
+26,Aspen Mountain,United States,0,Aspen Mountain,United States,1.0000000000000002,Aspen Mountain,United States,1.121472373823991
+27,Aspen Highlands,United States,0,Aspen Highlands,United States,1.0000000000000002,Aspen Highlands,United States,1.2719726257648127
+28,Squaw Valley,United States,0,Squaw Valley,United States,0.9668246445497632,Squaw Valley,United States,0.41913786476682213
+29,Vail,United States,3,Vail,United States,0.9289099526066351,Vail,United States,1.1374830389240784
+30,Snowbasin,United States,0,Snowbasin,United States,0.5971563981042654,Snowbasin,United States,0.5152018553673468
+31,Beaver Creek,United States,1,Beaver Creek,United States,0.9289099526066351,Beaver Creek,United States,1.1961888109577323
+32,Breckenridge,United States,1,Breckenridge,United States,0.8056872037914693,Breckenridge,United States,1.6508916998002154
+33,Whitefish Mountain,United States,0,Whitefish Mountain,United States,0.3127962085308057,Whitefish Mountain,United States,0.3088137084504866
+34,Mt. Hood Meadows,United States,0,Mt. Hood Meadows,United States,0.09952606635071093,Mt. Hood Meadows,United States,0.15190919046962975
+35,Sugar Bowl,United States,0,Sugar Bowl,United States,0.40758293838862564,Sugar Bowl,United States,0.20032544173229383
+36,Mammoth Mountain,United States,0,Mammoth Mountain,United States,0.8815165876777253,Mammoth Mountain,United States,1.069170867830372
+37,Telluride,United States,0,Telluride,United States,0.6255924170616114,Telluride,United States,1.5452213101396384
+38,Big Sky,United States,3,Big Sky,United States,0.7725118483412323,Big Sky,United States,1.1001248203572076
+39,Snowmass,United States,3,Snowmass,United States,1.0000000000000002,Snowmass,United States,1.5430865547929602
+40,Lake Louise,Canada,1,Lake Louise,Canada,0.43127962085308064,Lake Louise,Canada,0.28785041094610514
+41,Powder Mountain,United States,0,Powder Mountain,United States,0.5876777251184835,Powder Mountain,United States,0.36790373644654234
+42,Keystone,United States,0,Keystone,United States,0.7867298578199053,Keystone,United States,1.3701713717120159
+43,Killington,United States,0,Killington,United States,0.5876777251184835,Killington,United States,1.1552442034084425
+44,Copper Mountain,United States,0,Copper Mountain,United States,0.5260663507109005,Copper Mountain,United States,1.4939871818193586
+45,Sugarloaf,United States,0,Sugarloaf,United States,0.18957345971563982,Sugarloaf,United States,1.1541768257351033
+46,Silver Star,Canada,0,Silver Star,Canada,0.26540284360189575,Silver Star,Canada,0.4827962692047701
+47,Taos,United States,0,Taos,United States,0.29383886255924174,Taos,United States,1.523873756672855
+48,Snowbird,United States,0,Snowbird,United States,0.7156398104265405,Snowbird,United States,1.0520928250569455
+49,Sugarbush,United States,0,Sugarbush,United States,0.5497630331753556,Sugarbush,United States,1.2032761987087046
+50,Marmot Basin-Jasper,Canada,0,Marmot Basin-Jasper,Canada,0.4644549763033176,Marmot Basin-Jasper,Canada,0.045555679098115275
+51,Purgatory-Durango,United States,0,Purgatory-Durango,United States,0.1943127962085308,Purgatory-Durango,United States,0.9944544306966306
+52,Sunday River,United States,0,Sunday River,United States,0.23222748815165878,Sunday River,United States,1.5053440802636877
+53,Kimberley,Canada,0,Kimberley,Canada,0.45497630331753564,Kimberley,Canada,0.4112819650910462
+54,Great Divide,United States,0,Great Divide,United States,0.15639810426540285,Great Divide,United States,0.17325674393641302
+55,Mont Tremblant,Canada,0,Mont Tremblant,Canada,0.48341232227488157,Mont Tremblant,Canada,1.592869049477499
+56,Smugglers' Notch,United States,0,Smugglers' Notch,United States,0.26540284360189575,Smugglers' Notch,United States,1.3399005408961175
+57,Jay Peak,United States,0,Jay Peak,United States,0.3127962085308057,Jay Peak,United States,1.2726557474757503
+58,Angel Fire,United States,0,Angel Fire,United States,0.3886255924170617,Angel Fire,United States,0.9485571907430467
+59,Bridger Bowl-Bozeman,United States,0,Bridger Bowl-Bozeman,United States,0.20853080568720384,Bridger Bowl-Bozeman,United States,0.33588240624636745
+60,Brian Head,United States,0,Brian Head,United States,0.1137440758293839,Brian Head,United States,1.0254083832234664
+61,Stowe,United States,0,Stowe,United States,0.5592417061611374,Stowe,United States,1.3356310302027607
+62,Okemo,United States,0,Okemo,United States,0.44549763033175355,Okemo,United States,1.4391666645166596
+63,Mont-Sainte-Anne-Beaupre,Canada,0,Mont-Sainte-Anne-Beaupre,Canada,0.4881516587677725,Mont-Sainte-Anne-Beaupre,Canada,1.672922374977936
+64,49 Degrees North,United States,0,49 Degrees North,United States,0.07582938388625593,49 Degrees North,United States,0.6482398085723403
+65,Bear Valley,United States,0,Bear Valley,United States,0.48341232227488157,Bear Valley,United States,0.2376836602991645
+66,Apex,Canada,0,Apex,Canada,0.37440758293838866,Apex,Canada,0.19994118576989206
+67,Mt. Hood Skibowl,United States,0,Mt. Hood Skibowl,United States,0.48341232227488157,Mt. Hood Skibowl,United States,0.9150842269071309
+68,Brighton,United States,0,Brighton,United States,0.4265402843601896,Brighton,United States,0.8887840410360536
+69,Kirkwood,United States,0,Kirkwood,United States,0.5971563981042654,Kirkwood,United States,0.661432596614812
+70,Red Lodge,United States,0,Red Lodge,United States,0.18009478672985785,Red Lodge,United States,0.5365494088341299
+71,Solitude,United States,0,Solitude,United States,0.29383886255924174,Solitude,United States,0.675308506368221
+72,Ayeska-Girdwood,United States,0,Ayeska-Girdwood,United States,0.36018957345971564,Ayeska-Girdwood,United States,1.6302272680443697
+73,Mount Snow,United States,0,Mount Snow,United States,0.40758293838862564,Mount Snow,United States,1.3580459613428832
+74,Gore Mountain,United States,0,Gore Mountain,United States,0.38388625592417064,Gore Mountain,United States,1.3559112059962048
+75,Bretton Woods,United States,0,Bretton Woods,United States,0.4502369668246446,Bretton Woods,United States,1.5181526123437576
+76,Revelstoke,Canada,0,Revelstoke,Canada,0.6919431279620853,Revelstoke,Canada,0.15190919046962975
+77,Apache,United States,0,Apache,United States,0.27014218009478674,Apache,United States,1.1823129012043232
+78,Eldora Mountain,United States,0,Eldora Mountain,United States,0.40758293838862564,Eldora Mountain,United States,0.9869827869832565
+79,Donner Ski Ranch,United States,0,Donner Ski Ranch,United States,0.36018957345971564,Donner Ski Ranch,United States,0.003927949837887943
+80,Cypress,Canada,0,Cypress,Canada,0.3791469194312797,Cypress,Canada,0.9898006640408722
+81,Whiteface-Lake Placid,United States,1,Whiteface-Lake Placid,United States,0.43127962085308064,Whiteface-Lake Placid,United States,1.0965384313747886
+82,The Summit at Snoqualmie,United States,1,The Summit at Snoqualmie,United States,0.18483412322274884,The Summit at Snoqualmie,United States,1.2673188591090545
+83,Tamarack,United States,1,Tamarack,United States,0.48341232227488157,Tamarack,United States,0.021689114322251953
+84,Summit Ski Area at Mt. Hood,United States,1,Summit Ski Area at Mt. Hood,United States,0.09952606635071093,Summit Ski Area at Mt. Hood,United States,1.126425006228285
+85,Bolton Valley,United States,1,Bolton Valley,United States,0.3127962085308057,Bolton Valley,United States,1.5021419472436701
+86,Montage Mountain Resort,United States,1,Montage Mountain Resort,United States,0.033175355450236976,Montage Mountain Resort,United States,1.8928021756858036
+87,Sandia Peak,United States,1,Sandia Peak,United States,0.0,Sandia Peak,United States,0.280378767232731
+88,Crystal Mountain-Washinton,United States,0,Crystal Mountain-Washinton,United States,0.7393364928909953,Crystal Mountain-Washinton,United States,0.24583842572347606
+89,Stevens Pass,United States,1,Stevens Pass,United States,0.3696682464454976,Stevens Pass,United States,0.6589135853057319
+90,Loon Mountain,United States,0,Loon Mountain,United States,0.18009478672985785,Loon Mountain,United States,1.534163277443845
+91,Le Massif,Canada,1,Le Massif,Canada,0.4170616113744076,Le Massif,Canada,1.666518108937901
+92,Bluewood Ski Area,United States,1,Bluewood Ski Area,United States,0.10426540284360192,Bluewood Ski Area,United States,0.6866654048125501
+93,Silver Mountain-Idaho,United States,0,Silver Mountain-Idaho,United States,0.15639810426540285,Silver Mountain-Idaho,United States,0.47852675851141346
+94,Mt. Spokane,United States,0,Mt. Spokane,United States,0.12796208530805692,Mt. Spokane,United States,0.6108815900054696
+95,Mt. Rose Ski Tahoe,United States,0,Mt. Rose Ski Tahoe,United States,0.6255924170616114,Mt. Rose Ski Tahoe,United States,0.6272765110679588
+96,Mad River Glen,United States,0,Mad River Glen,United States,0.3649289099526067,Mad River Glen,United States,1.343102673916135
+97,Wolf Creek,United States,1,Wolf Creek,United States,0.26540284360189575,Wolf Creek,United States,1.345621685225215
+98,Grand Targhee,United States,0,Grand Targhee,United States,0.5545023696682465,Grand Targhee,United States,0.681712772408256
+99,White Pine,United States,1,White Pine,United States,0.08056872037914692,White Pine,United States,0.5643012283409482
+100,Homewood Mountain,United States,0,Homewood Mountain,United States,0.9763033175355451,Homewood Mountain,United States,0.037016657711401973
