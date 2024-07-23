@@ -3,605 +3,505 @@ SummitSelect: List of Recommended Ski Resorts
 
 Final List:
 ----------------------------------------
-1 Rank: Sandia Peak
- Run Count: 1
- Price (USD): $0.00
- Peak Elevation (m): 0
- Total Score: 0.3915
-
-2 Rank: White Pine
- Run Count: 1
- Price (USD): $0.08
- Peak Elevation (m): 0
- Total Score: 0.3153
-
-3 Rank: Bluewood Ski Area
- Run Count: 1
- Price (USD): $0.10
- Peak Elevation (m): 0
- Total Score: 0.2862
-
-4 Rank: Tamarack
- Run Count: 1
- Price (USD): $0.48
- Peak Elevation (m): 0
- Total Score: 0.2771
-
-5 Rank: Mt. Hood Meadows
+1 Rank: Aspen Highlands
  Run Count: 0
- Price (USD): $0.10
- Peak Elevation (m): 0
- Total Score: 0.2711
-
-6 Rank: Great Divide
- Run Count: 0
- Price (USD): $0.16
- Peak Elevation (m): 0
- Total Score: 0.2486
-
-7 Rank: Lake Louise
- Run Count: 1
- Price (USD): $0.43
- Peak Elevation (m): 0
- Total Score: 0.2479
-
-8 Rank: Whistler
- Run Count: 2
- Price (USD): $0.93
- Peak Elevation (m): 0
- Total Score: 0.2268
-
-9 Rank: Big Sky
- Run Count: 3
- Price (USD): $0.77
- Peak Elevation (m): 1
- Total Score: 0.2135
-
-10 Rank: Summit Ski Area at Mt. Hood
- Run Count: 1
- Price (USD): $0.10
- Peak Elevation (m): 1
- Total Score: 0.2109
-
-11 Rank: Donner Ski Ranch
- Run Count: 0
- Price (USD): $0.36
- Peak Elevation (m): 0
- Total Score: 0.2109
-
-12 Rank: Park City
- Run Count: 3
- Price (USD): $0.99
- Peak Elevation (m): 0
- Total Score: 0.2065
-
-13 Rank: Stevens Pass
- Run Count: 1
- Price (USD): $0.37
- Peak Elevation (m): 0
- Total Score: 0.2034
-
-14 Rank: Bridger Bowl-Bozeman
- Run Count: 0
- Price (USD): $0.21
- Peak Elevation (m): 0
- Total Score: 0.2030
-
-15 Rank: Silver Mountain-Idaho
- Run Count: 0
- Price (USD): $0.16
- Peak Elevation (m): 0
- Total Score: 0.1953
-
-16 Rank: 49 Degrees North
- Run Count: 0
- Price (USD): $0.08
- Peak Elevation (m): 0
- Total Score: 0.1922
-
-17 Rank: Fernie
- Run Count: 1
- Price (USD): $0.64
- Peak Elevation (m): 0
- Total Score: 0.1843
-
-18 Rank: Mt. Spokane
- Run Count: 0
- Price (USD): $0.13
- Peak Elevation (m): 0
- Total Score: 0.1816
-
-19 Rank: Red Lodge
- Run Count: 0
- Price (USD): $0.18
- Peak Elevation (m): 0
- Total Score: 0.1773
-
-20 Rank: Whitefish Mountain
- Run Count: 0
- Price (USD): $0.31
- Peak Elevation (m): 0
- Total Score: 0.1733
-
-21 Rank: Wenatchee-Mission Ridge
- Run Count: 0
- Price (USD): $0.31
- Peak Elevation (m): 0
- Total Score: 0.1733
-
-22 Rank: Apex
- Run Count: 0
- Price (USD): $0.37
- Peak Elevation (m): 0
- Total Score: 0.1720
-
-23 Rank: Marmot Basin-Jasper
- Run Count: 0
- Price (USD): $0.46
- Peak Elevation (m): 0
- Total Score: 0.1692
-
-24 Rank: Sugar Bowl
- Run Count: 0
- Price (USD): $0.41
- Peak Elevation (m): 0
- Total Score: 0.1610
-
-25 Rank: Silver Star
- Run Count: 0
- Price (USD): $0.27
- Peak Elevation (m): 0
- Total Score: 0.1586
-
-26 Rank: The Summit at Snoqualmie
- Run Count: 1
- Price (USD): $0.18
- Peak Elevation (m): 1
- Total Score: 0.1582
-
-27 Rank: Vail
- Run Count: 3
- Price (USD): $0.93
- Peak Elevation (m): 1
- Total Score: 0.1553
-
-28 Rank: Kicking Horse
- Run Count: 0
- Price (USD): $0.53
- Peak Elevation (m): 0
- Total Score: 0.1414
-
-29 Rank: Big White
- Run Count: 0
- Price (USD): $0.55
- Peak Elevation (m): 0
- Total Score: 0.1337
-
-30 Rank: Panorama
- Run Count: 0
- Price (USD): $0.60
- Peak Elevation (m): 0
- Total Score: 0.1329
-
-31 Rank: Schweitzer Mountain
- Run Count: 0
- Price (USD): $0.36
- Peak Elevation (m): 0
- Total Score: 0.1322
-
-32 Rank: Bear Valley
- Run Count: 0
- Price (USD): $0.48
- Peak Elevation (m): 0
- Total Score: 0.1294
-
-33 Rank: Mt. Bachelor
- Run Count: 0
- Price (USD): $0.40
- Peak Elevation (m): 0
- Total Score: 0.1238
-
-34 Rank: Wolf Creek
- Run Count: 1
- Price (USD): $0.27
- Peak Elevation (m): 1
- Total Score: 0.1179
-
-35 Rank: Solitude
- Run Count: 0
- Price (USD): $0.29
- Peak Elevation (m): 0
- Total Score: 0.1156
-
-36 Rank: Brian Head
- Run Count: 0
- Price (USD): $0.11
- Peak Elevation (m): 1
- Total Score: 0.1139
-
-37 Rank: Kimberley
- Run Count: 0
- Price (USD): $0.45
- Peak Elevation (m): 0
- Total Score: 0.1085
-
-38 Rank: Whiteface-Lake Placid
- Run Count: 1
- Price (USD): $0.43
- Peak Elevation (m): 1
- Total Score: 0.1067
-
-39 Rank: Montage Mountain Resort
- Run Count: 1
- Price (USD): $0.03
- Peak Elevation (m): 1
- Total Score: 0.0991
-
-40 Rank: Purgatory-Durango
- Run Count: 0
- Price (USD): $0.19
- Peak Elevation (m): 0
- Total Score: 0.0927
-
-41 Rank: Mt. Baker
- Run Count: 0
- Price (USD): $0.27
- Peak Elevation (m): 0
- Total Score: 0.0828
-
-42 Rank: Revelstoke
- Run Count: 0
- Price (USD): $0.69
- Peak Elevation (m): 0
- Total Score: 0.0756
-
-43 Rank: Bolton Valley
- Run Count: 1
- Price (USD): $0.31
- Peak Elevation (m): 1
- Total Score: 0.0750
-
-44 Rank: Mount Washington
- Run Count: 0
- Price (USD): $0.34
- Peak Elevation (m): 0
- Total Score: 0.0742
-
-45 Rank: Powder Mountain
- Run Count: 0
- Price (USD): $0.59
- Peak Elevation (m): 0
- Total Score: 0.0723
-
-46 Rank: Red Mountain
- Run Count: 0
- Price (USD): $0.62
- Peak Elevation (m): 0
- Total Score: 0.0711
-
-47 Rank: Sugarloaf
- Run Count: 0
- Price (USD): $0.19
- Peak Elevation (m): 1
- Total Score: 0.0664
-
-48 Rank: Sun Peaks
- Run Count: 0
- Price (USD): $0.64
- Peak Elevation (m): 0
- Total Score: 0.0646
-
-49 Rank: Snowmass
- Run Count: 3
  Price (USD): $1.00
  Peak Elevation (m): 1
- Total Score: 0.0611
 
-50 Rank: Winter Park Resort
- Run Count: 1
- Price (USD): $0.45
+2 Rank: Aspen Mountain
+ Run Count: 0
+ Price (USD): $1.00
  Peak Elevation (m): 1
- Total Score: 0.0496
 
-51 Rank: Crystal Mountain-Washinton
- Run Count: 0
- Price (USD): $0.74
- Peak Elevation (m): 0
- Total Score: 0.0435
-
-52 Rank: Snowbasin
- Run Count: 0
- Price (USD): $0.60
- Peak Elevation (m): 0
- Total Score: 0.0434
-
-53 Rank: Angel Fire
- Run Count: 0
- Price (USD): $0.39
- Peak Elevation (m): 0
- Total Score: 0.0366
-
-54 Rank: Apache
- Run Count: 0
- Price (USD): $0.27
- Peak Elevation (m): 1
- Total Score: 0.0349
-
-55 Rank: Brighton
- Run Count: 0
- Price (USD): $0.43
- Peak Elevation (m): 0
- Total Score: 0.0345
-
-56 Rank: Cypress
- Run Count: 0
- Price (USD): $0.38
- Peak Elevation (m): 0
- Total Score: 0.0325
-
-57 Rank: Steamboat
- Run Count: 1
- Price (USD): $0.76
- Peak Elevation (m): 0
- Total Score: 0.0296
-
-58 Rank: Grand Targhee
- Run Count: 0
- Price (USD): $0.55
- Peak Elevation (m): 0
- Total Score: 0.0284
-
-59 Rank: Eldora Mountain
- Run Count: 0
- Price (USD): $0.41
- Peak Elevation (m): 0
- Total Score: 0.0236
-
-60 Rank: Kirkwood
- Run Count: 0
- Price (USD): $0.60
- Peak Elevation (m): 0
- Total Score: 0.0179
-
-61 Rank: Mt. Rose Ski Tahoe
- Run Count: 0
- Price (USD): $0.63
- Peak Elevation (m): 0
- Total Score: 0.0145
-
-62 Rank: Mt. Rose
- Run Count: 0
- Price (USD): $0.63
- Peak Elevation (m): 0
- Total Score: 0.0141
-
-63 Rank: Le Massif
- Run Count: 1
- Price (USD): $0.42
- Peak Elevation (m): 1
- Total Score: 0.0119
-
-64 Rank: Mt. Hood Skibowl
- Run Count: 0
- Price (USD): $0.48
- Peak Elevation (m): 0
- Total Score: 0.0112
-
-65 Rank: Smugglers' Notch
- Run Count: 0
- Price (USD): $0.27
- Peak Elevation (m): 1
- Total Score: 0.0089
-
-66 Rank: Jay Peak
- Run Count: 0
- Price (USD): $0.31
- Peak Elevation (m): 1
- Total Score: 0.0050
-
-67 Rank: Loon Mountain
- Run Count: 0
- Price (USD): $0.18
- Peak Elevation (m): 1
- Total Score: 0.0032
-
-68 Rank: Homewood Mountain
- Run Count: 0
- Price (USD): $0.98
- Peak Elevation (m): 0
- Total Score: 0.0018
-
-69 Rank: Northstar California
- Run Count: 0
- Price (USD): $0.88
- Peak Elevation (m): 0
- Total Score: -0.0083
-
-70 Rank: Sunday River
- Run Count: 0
- Price (USD): $0.23
- Peak Elevation (m): 1
- Total Score: -0.0090
-
-71 Rank: Mad River Glen
- Run Count: 0
- Price (USD): $0.36
- Peak Elevation (m): 1
- Total Score: -0.0245
-
-72 Rank: Taos
- Run Count: 0
- Price (USD): $0.29
- Peak Elevation (m): 1
- Total Score: -0.0326
-
-73 Rank: Gore Mountain
- Run Count: 0
- Price (USD): $0.38
- Peak Elevation (m): 1
- Total Score: -0.0330
-
-74 Rank: Loveland
- Run Count: 0
- Price (USD): $0.27
- Peak Elevation (m): 1
- Total Score: -0.0373
-
-75 Rank: Mount Snow
- Run Count: 0
- Price (USD): $0.41
- Peak Elevation (m): 1
- Total Score: -0.0411
-
-76 Rank: Stratton
- Run Count: 0
- Price (USD): $0.50
- Peak Elevation (m): 1
- Total Score: -0.0564
-
-77 Rank: Sugarbush
- Run Count: 0
- Price (USD): $0.55
- Peak Elevation (m): 1
- Total Score: -0.0610
-
-78 Rank: Squaw Valley
- Run Count: 0
- Price (USD): $0.97
- Peak Elevation (m): 0
- Total Score: -0.0618
-
-79 Rank: Alta
- Run Count: 0
- Price (USD): $0.72
- Peak Elevation (m): 0
- Total Score: -0.0637
-
-80 Rank: Killington
- Run Count: 0
- Price (USD): $0.59
- Peak Elevation (m): 1
- Total Score: -0.0652
-
-81 Rank: Crested Butte
- Run Count: 0
- Price (USD): $0.45
- Peak Elevation (m): 1
- Total Score: -0.0662
-
-82 Rank: Okemo
- Run Count: 0
- Price (USD): $0.45
- Peak Elevation (m): 1
- Total Score: -0.0678
-
-83 Rank: Jackson Hole
- Run Count: 0
- Price (USD): $0.75
- Peak Elevation (m): 0
- Total Score: -0.0690
-
-84 Rank: Arapahoe Basin
- Run Count: 0
- Price (USD): $0.41
- Peak Elevation (m): 1
- Total Score: -0.0707
-
-85 Rank: Bald Mountain-Sun Valley
- Run Count: 0
- Price (USD): $0.98
- Peak Elevation (m): 0
- Total Score: -0.0717
-
-86 Rank: Ayeska-Girdwood
- Run Count: 0
- Price (USD): $0.36
- Peak Elevation (m): 1
- Total Score: -0.0730
-
-87 Rank: Heavenly
- Run Count: 0
- Price (USD): $0.83
- Peak Elevation (m): 0
- Total Score: -0.0739
-
-88 Rank: Beaver Creek
- Run Count: 1
- Price (USD): $0.93
- Peak Elevation (m): 1
- Total Score: -0.0749
-
-89 Rank: Bretton Woods
- Run Count: 0
- Price (USD): $0.45
- Peak Elevation (m): 1
- Total Score: -0.0832
-
-90 Rank: Stowe
- Run Count: 0
- Price (USD): $0.56
- Peak Elevation (m): 1
- Total Score: -0.0873
-
-91 Rank: Snowbird
- Run Count: 0
- Price (USD): $0.72
- Peak Elevation (m): 1
- Total Score: -0.0894
-
-92 Rank: Copper Mountain
- Run Count: 0
- Price (USD): $0.53
- Peak Elevation (m): 1
- Total Score: -0.1040
-
-93 Rank: Mont Tremblant
- Run Count: 0
- Price (USD): $0.48
- Peak Elevation (m): 1
- Total Score: -0.1072
-
-94 Rank: Breckenridge
- Run Count: 1
- Price (USD): $0.81
- Peak Elevation (m): 1
- Total Score: -0.1136
-
-95 Rank: Mont-Sainte-Anne-Beaupre
- Run Count: 0
- Price (USD): $0.49
- Peak Elevation (m): 1
- Total Score: -0.1227
-
-96 Rank: Telluride
- Run Count: 0
- Price (USD): $0.63
- Peak Elevation (m): 1
- Total Score: -0.1458
-
-97 Rank: Mammoth Mountain
- Run Count: 0
- Price (USD): $0.88
- Peak Elevation (m): 1
- Total Score: -0.1471
-
-98 Rank: Keystone
+3 Rank: Keystone
  Run Count: 0
  Price (USD): $0.79
  Peak Elevation (m): 1
- Total Score: -0.1684
 
-99 Rank: Aspen Mountain
+4 Rank: Mammoth Mountain
  Run Count: 0
+ Price (USD): $0.88
+ Peak Elevation (m): 1
+
+5 Rank: Telluride
+ Run Count: 0
+ Price (USD): $0.63
+ Peak Elevation (m): 1
+
+6 Rank: Mont-Sainte-Anne-Beaupre
+ Run Count: 0
+ Price (USD): $0.49
+ Peak Elevation (m): 1
+
+7 Rank: Breckenridge
+ Run Count: 1
+ Price (USD): $0.81
+ Peak Elevation (m): 1
+
+8 Rank: Mont Tremblant
+ Run Count: 0
+ Price (USD): $0.48
+ Peak Elevation (m): 1
+
+9 Rank: Copper Mountain
+ Run Count: 0
+ Price (USD): $0.53
+ Peak Elevation (m): 1
+
+10 Rank: Snowbird
+ Run Count: 0
+ Price (USD): $0.72
+ Peak Elevation (m): 1
+
+11 Rank: Stowe
+ Run Count: 0
+ Price (USD): $0.56
+ Peak Elevation (m): 1
+
+12 Rank: Bretton Woods
+ Run Count: 0
+ Price (USD): $0.45
+ Peak Elevation (m): 1
+
+13 Rank: Beaver Creek
+ Run Count: 1
+ Price (USD): $0.93
+ Peak Elevation (m): 1
+
+14 Rank: Heavenly
+ Run Count: 0
+ Price (USD): $0.83
+ Peak Elevation (m): 0
+
+15 Rank: Ayeska-Girdwood
+ Run Count: 0
+ Price (USD): $0.36
+ Peak Elevation (m): 1
+
+16 Rank: Bald Mountain-Sun Valley
+ Run Count: 0
+ Price (USD): $0.98
+ Peak Elevation (m): 0
+
+17 Rank: Arapahoe Basin
+ Run Count: 0
+ Price (USD): $0.41
+ Peak Elevation (m): 1
+
+18 Rank: Jackson Hole
+ Run Count: 0
+ Price (USD): $0.75
+ Peak Elevation (m): 0
+
+19 Rank: Okemo
+ Run Count: 0
+ Price (USD): $0.45
+ Peak Elevation (m): 1
+
+20 Rank: Crested Butte
+ Run Count: 0
+ Price (USD): $0.45
+ Peak Elevation (m): 1
+
+21 Rank: Killington
+ Run Count: 0
+ Price (USD): $0.59
+ Peak Elevation (m): 1
+
+22 Rank: Alta
+ Run Count: 0
+ Price (USD): $0.72
+ Peak Elevation (m): 0
+
+23 Rank: Squaw Valley
+ Run Count: 0
+ Price (USD): $0.97
+ Peak Elevation (m): 0
+
+24 Rank: Sugarbush
+ Run Count: 0
+ Price (USD): $0.55
+ Peak Elevation (m): 1
+
+25 Rank: Stratton
+ Run Count: 0
+ Price (USD): $0.50
+ Peak Elevation (m): 1
+
+26 Rank: Mount Snow
+ Run Count: 0
+ Price (USD): $0.41
+ Peak Elevation (m): 1
+
+27 Rank: Loveland
+ Run Count: 0
+ Price (USD): $0.27
+ Peak Elevation (m): 1
+
+28 Rank: Gore Mountain
+ Run Count: 0
+ Price (USD): $0.38
+ Peak Elevation (m): 1
+
+29 Rank: Taos
+ Run Count: 0
+ Price (USD): $0.29
+ Peak Elevation (m): 1
+
+30 Rank: Mad River Glen
+ Run Count: 0
+ Price (USD): $0.36
+ Peak Elevation (m): 1
+
+31 Rank: Sunday River
+ Run Count: 0
+ Price (USD): $0.23
+ Peak Elevation (m): 1
+
+32 Rank: Northstar California
+ Run Count: 0
+ Price (USD): $0.88
+ Peak Elevation (m): 0
+
+33 Rank: Homewood Mountain
+ Run Count: 0
+ Price (USD): $0.98
+ Peak Elevation (m): 0
+
+34 Rank: Loon Mountain
+ Run Count: 0
+ Price (USD): $0.18
+ Peak Elevation (m): 1
+
+35 Rank: Jay Peak
+ Run Count: 0
+ Price (USD): $0.31
+ Peak Elevation (m): 1
+
+36 Rank: Smugglers' Notch
+ Run Count: 0
+ Price (USD): $0.27
+ Peak Elevation (m): 1
+
+37 Rank: Mt. Hood Skibowl
+ Run Count: 0
+ Price (USD): $0.48
+ Peak Elevation (m): 0
+
+38 Rank: Le Massif
+ Run Count: 1
+ Price (USD): $0.42
+ Peak Elevation (m): 1
+
+39 Rank: Mt. Rose
+ Run Count: 0
+ Price (USD): $0.63
+ Peak Elevation (m): 0
+
+40 Rank: Mt. Rose Ski Tahoe
+ Run Count: 0
+ Price (USD): $0.63
+ Peak Elevation (m): 0
+
+41 Rank: Kirkwood
+ Run Count: 0
+ Price (USD): $0.60
+ Peak Elevation (m): 0
+
+42 Rank: Eldora Mountain
+ Run Count: 0
+ Price (USD): $0.41
+ Peak Elevation (m): 0
+
+43 Rank: Grand Targhee
+ Run Count: 0
+ Price (USD): $0.55
+ Peak Elevation (m): 0
+
+44 Rank: Steamboat
+ Run Count: 1
+ Price (USD): $0.76
+ Peak Elevation (m): 0
+
+45 Rank: Cypress
+ Run Count: 0
+ Price (USD): $0.38
+ Peak Elevation (m): 0
+
+46 Rank: Brighton
+ Run Count: 0
+ Price (USD): $0.43
+ Peak Elevation (m): 0
+
+47 Rank: Apache
+ Run Count: 0
+ Price (USD): $0.27
+ Peak Elevation (m): 1
+
+48 Rank: Angel Fire
+ Run Count: 0
+ Price (USD): $0.39
+ Peak Elevation (m): 0
+
+49 Rank: Snowbasin
+ Run Count: 0
+ Price (USD): $0.60
+ Peak Elevation (m): 0
+
+50 Rank: Crystal Mountain-Washinton
+ Run Count: 0
+ Price (USD): $0.74
+ Peak Elevation (m): 0
+
+51 Rank: Winter Park Resort
+ Run Count: 1
+ Price (USD): $0.45
+ Peak Elevation (m): 1
+
+52 Rank: Snowmass
+ Run Count: 3
  Price (USD): $1.00
  Peak Elevation (m): 1
- Total Score: -0.1953
 
-100 Rank: Aspen Highlands
+53 Rank: Sun Peaks
  Run Count: 0
- Price (USD): $1.00
+ Price (USD): $0.64
+ Peak Elevation (m): 0
+
+54 Rank: Sugarloaf
+ Run Count: 0
+ Price (USD): $0.19
  Peak Elevation (m): 1
- Total Score: -0.2216
+
+55 Rank: Red Mountain
+ Run Count: 0
+ Price (USD): $0.62
+ Peak Elevation (m): 0
+
+56 Rank: Powder Mountain
+ Run Count: 0
+ Price (USD): $0.59
+ Peak Elevation (m): 0
+
+57 Rank: Mount Washington
+ Run Count: 0
+ Price (USD): $0.34
+ Peak Elevation (m): 0
+
+58 Rank: Bolton Valley
+ Run Count: 1
+ Price (USD): $0.31
+ Peak Elevation (m): 1
+
+59 Rank: Revelstoke
+ Run Count: 0
+ Price (USD): $0.69
+ Peak Elevation (m): 0
+
+60 Rank: Mt. Baker
+ Run Count: 0
+ Price (USD): $0.27
+ Peak Elevation (m): 0
+
+61 Rank: Purgatory-Durango
+ Run Count: 0
+ Price (USD): $0.19
+ Peak Elevation (m): 0
+
+62 Rank: Montage Mountain Resort
+ Run Count: 1
+ Price (USD): $0.03
+ Peak Elevation (m): 1
+
+63 Rank: Whiteface-Lake Placid
+ Run Count: 1
+ Price (USD): $0.43
+ Peak Elevation (m): 1
+
+64 Rank: Kimberley
+ Run Count: 0
+ Price (USD): $0.45
+ Peak Elevation (m): 0
+
+65 Rank: Brian Head
+ Run Count: 0
+ Price (USD): $0.11
+ Peak Elevation (m): 1
+
+66 Rank: Solitude
+ Run Count: 0
+ Price (USD): $0.29
+ Peak Elevation (m): 0
+
+67 Rank: Wolf Creek
+ Run Count: 1
+ Price (USD): $0.27
+ Peak Elevation (m): 1
+
+68 Rank: Mt. Bachelor
+ Run Count: 0
+ Price (USD): $0.40
+ Peak Elevation (m): 0
+
+69 Rank: Bear Valley
+ Run Count: 0
+ Price (USD): $0.48
+ Peak Elevation (m): 0
+
+70 Rank: Schweitzer Mountain
+ Run Count: 0
+ Price (USD): $0.36
+ Peak Elevation (m): 0
+
+71 Rank: Panorama
+ Run Count: 0
+ Price (USD): $0.60
+ Peak Elevation (m): 0
+
+72 Rank: Big White
+ Run Count: 0
+ Price (USD): $0.55
+ Peak Elevation (m): 0
+
+73 Rank: Kicking Horse
+ Run Count: 0
+ Price (USD): $0.53
+ Peak Elevation (m): 0
+
+74 Rank: Vail
+ Run Count: 3
+ Price (USD): $0.93
+ Peak Elevation (m): 1
+
+75 Rank: The Summit at Snoqualmie
+ Run Count: 1
+ Price (USD): $0.18
+ Peak Elevation (m): 1
+
+76 Rank: Silver Star
+ Run Count: 0
+ Price (USD): $0.27
+ Peak Elevation (m): 0
+
+77 Rank: Sugar Bowl
+ Run Count: 0
+ Price (USD): $0.41
+ Peak Elevation (m): 0
+
+78 Rank: Marmot Basin-Jasper
+ Run Count: 0
+ Price (USD): $0.46
+ Peak Elevation (m): 0
+
+79 Rank: Apex
+ Run Count: 0
+ Price (USD): $0.37
+ Peak Elevation (m): 0
+
+80 Rank: Whitefish Mountain
+ Run Count: 0
+ Price (USD): $0.31
+ Peak Elevation (m): 0
+
+81 Rank: Wenatchee-Mission Ridge
+ Run Count: 0
+ Price (USD): $0.31
+ Peak Elevation (m): 0
+
+82 Rank: Red Lodge
+ Run Count: 0
+ Price (USD): $0.18
+ Peak Elevation (m): 0
+
+83 Rank: Mt. Spokane
+ Run Count: 0
+ Price (USD): $0.13
+ Peak Elevation (m): 0
+
+84 Rank: Fernie
+ Run Count: 1
+ Price (USD): $0.64
+ Peak Elevation (m): 0
+
+85 Rank: 49 Degrees North
+ Run Count: 0
+ Price (USD): $0.08
+ Peak Elevation (m): 0
+
+86 Rank: Silver Mountain-Idaho
+ Run Count: 0
+ Price (USD): $0.16
+ Peak Elevation (m): 0
+
+87 Rank: Bridger Bowl-Bozeman
+ Run Count: 0
+ Price (USD): $0.21
+ Peak Elevation (m): 0
+
+88 Rank: Stevens Pass
+ Run Count: 1
+ Price (USD): $0.37
+ Peak Elevation (m): 0
+
+89 Rank: Park City
+ Run Count: 3
+ Price (USD): $0.99
+ Peak Elevation (m): 0
+
+90 Rank: Donner Ski Ranch
+ Run Count: 0
+ Price (USD): $0.36
+ Peak Elevation (m): 0
+
+91 Rank: Summit Ski Area at Mt. Hood
+ Run Count: 1
+ Price (USD): $0.10
+ Peak Elevation (m): 1
+
+92 Rank: Big Sky
+ Run Count: 3
+ Price (USD): $0.77
+ Peak Elevation (m): 1
+
+93 Rank: Whistler
+ Run Count: 2
+ Price (USD): $0.93
+ Peak Elevation (m): 0
+
+94 Rank: Lake Louise
+ Run Count: 1
+ Price (USD): $0.43
+ Peak Elevation (m): 0
+
+95 Rank: Great Divide
+ Run Count: 0
+ Price (USD): $0.16
+ Peak Elevation (m): 0
+
+96 Rank: Mt. Hood Meadows
+ Run Count: 0
+ Price (USD): $0.10
+ Peak Elevation (m): 0
+
+97 Rank: Tamarack
+ Run Count: 1
+ Price (USD): $0.48
+ Peak Elevation (m): 0
+
+98 Rank: Bluewood Ski Area
+ Run Count: 1
+ Price (USD): $0.10
+ Peak Elevation (m): 0
+
+99 Rank: White Pine
+ Run Count: 1
+ Price (USD): $0.08
+ Peak Elevation (m): 0
+
+100 Rank: Sandia Peak
+ Run Count: 1
+ Price (USD): $0.00
+ Peak Elevation (m): 0
 
 
 How Each Feature Ranks Based on Your Preferences:
