@@ -159,10 +159,10 @@ class SummitSelect_Main:
 
                 for _, resort in final_ranking.iterrows():
                     f.write(f"{int(resort['Rank'])} Rank: {resort['Resort']}\n")
-                    f.write(f" Run Count: {resort['Run Count']}\n")
+                    f.write(f" Run Count: {int(resort['Run Count'])}\n")
                     f.write(f" Price (USD): ${resort['Price (USD)']:.2f}\n")
                     f.write(f" Peak Elevation (m): {int(resort['Peak Elevation (m)'])}\n")
-                    f.write(f" Total Score: {resort['Total Weighted Score']:.4f}\n\n")
+                    f.write("\n")
 
                 f.write("\nHow Each Feature Ranks Based on Your Preferences:\n")
                 f.write("-" * 40 + "\n")
