@@ -62,5 +62,25 @@ https://www.youtube.com/watch?v=88pl8TuuKz0&ab_channel=NeuralNine
 ### Additional Aid
 - I utilized generative AI to assist with debugging and researching topics.
 # Project Report
-Report coming soon, containing a more in-depth project overview, why I chose to pursue the project,
-algorithm analysis, and more...
+    To re-iterate, this project serves to curate a list of top ski resorts tailored
+to the preferences of the user.
+### Data Mining Task
+    The task of this project is to answer a series of questions about various ski 
+resorts across North America, and curate a list, ranking these ski resorts tailored to the answered questions. The questions are as follows:
+
+1. Which ski resorts contain the most runs?
+2. Which ski resorts are the most affordable?
+3. Which ski resorts have the highest elevation (and consequentially, the best snow)?
+
+    Using the two datasets listed under 'Resources Used', and some tedious browsing 
+on Google, I've compiled three separate datasets, each containing data for the same list of 100 ski resorts across the United States and Canada; run count, full-day adult lift ticket prices, and the peak elevation of the resort, respectively. The overall goal is to use the three datasets and the three listed questions to compile a list of ski resort recommendations, of which are the "best bang for your buck", or not, if you decide you want to find and attend the most expensive ski resort. Someone using this program could give the prompt that they want to find the ski resorts with the worst pricing, the least amount of runs, and the lowest elevation if they so please!
+### Methodology
+    In order to get the data ready for the main algorithm used in this program, the
+weighted sum model, I need to perform rather intensive data preprocessing, followed by a ranking system for each key feature. To keep it brief, the data preprocessing, which is mostly done in `process_data.py`, normalizes the data before meging them into a new dataset. This new dataset is then used as input for the ranking functions in `ranking_data.py`. The ranking system of this project is designed to take in user input for the three questions listed under 'Data Mining Task', and *rank* the three unique criteria based on the users' responses. To be specific, the user is asked to give a basic 'yes' or 'no' response to each question. For example, a 'yes' to run count would rank Run Count from most to least runs per resort, a 'yes' to prices would rank Price (USD) from least expensive to most expensive lift tickets, and a 'yes' to elevation would rank Peak Elevation (m) from highest to lowest.
+
+    Once the new input file is created, we come to the real meat and potatoes of this
+program, the Weighted Sum Model, or also known as the Multi Criteria Decision Making Model. This model takes in multiple possible pieces of data that relate to a list of items, as we have in our dataset (run count, price, elevation) for each resort, and determines the best item based on the order of scoring for each criteria. The score for each criteria is used to compute a total overall score, and that is how, in this program, each resort is ranked in the final list that is written to the output file.
+
+**Weighted Sum Model**
+$$\left A_i^WSM-score \right = \left \sum_{j=1}^n w_j a_ij \right, \left for i = 1, 2, 3, ..., m \right$$
+Where m represents the different features, and n is the decision criteria. $`w_j`$ denotes the weights and $`a_ij`$ denotes the performance value, which we substitute with the results of z-score normalization.
