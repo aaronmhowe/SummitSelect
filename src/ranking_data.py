@@ -60,6 +60,7 @@ class RankingSkiResorts:
             self.run_count_ranking = sorted_data[data_columns]
 
             print(f"Sorted by Run Count ({'ascending' if ascending else 'descending'} Order...)")
+            print(self.run_count_ranking.head().to_string(index=False))
             
             return self.run_count_ranking
         
@@ -92,6 +93,7 @@ class RankingSkiResorts:
             self.price_ranking = sorted_data[data_columns]
 
             print(f"Sorted by Price ({'ascending' if ascending else 'descending'} Order...)")
+            print(self.price_ranking.head().to_string(index=False))
 
             return self.price_ranking
 
@@ -124,6 +126,7 @@ class RankingSkiResorts:
             self.elevation_ranking = sorted_data[data_columns]
 
             print(f"Sorted by Peak Elevation ({'ascending' if ascending else 'descending'} Order...)")
+            print(self.elevation_ranking.head().to_string(index=False))
 
             return self.elevation_ranking
         
@@ -141,40 +144,32 @@ class RankingSkiResorts:
     @param user_criteria: users' selected feature (runs, prices, elevation)
     @param ascending: If false, constructs a ranking from "I care" to "I don't care"
     """
-    def criteria(self, input_yes_runs=True, input_yes_price=True, input_yes_elevation=True) -> pd.DataFrame:
+    def criteria(self, user_criteria: str, ascending=False) -> pd.DataFrame:
 
         if self.data is None:
 
             raise ValueError("Could not Find Data...")
         
-        ranking_data['Score'] = 0
+        hash = {
+            'runs': ('Run Count', 'Run Count Rank', self.sorting_by_run_count),
+            'price': ('Price (USD)', 'Price Rank', self.sorting_by_price),
+            'elevation': ('Peak Elevation (m)', 'Elevation Rank', self.sorting_by_elevation)
+        }
+        
+        sorting_function = hash[user_criteria.lower()]
 
-        # using user-input to calculate feature scores
-        if input_yes_price:
+        if user_criteria.lower() == 'price':
 
-            price_rank = self.sorting_by_price()['Price Rank']
-            # calculated to where the lower the price, the higher the score
-            ranking_data['Score'] += price_rank.max() - price_rank + 1
+            ranking = sorting_function(not ascending)
 
-        if input_yes_runs:
+        else:
 
-            run_rank = self.sorting_by_run_count()['Run Count Rank']
-            ranking_data['Score'] += run_rank.max() - run_rank + 1
+            ranking = sorting_function(ascending)
 
-        if input_yes_elevation:
+        print(f"Resorts Sorted by {user_criteria} ({'ascending' if ascending else 'descending'} Order.)")
 
-            elevation_rank = self.sorting_by_elevation()['Elevation Rank']
-            ranking_data['Score'] += elevation_rank.max() - elevation_rank + 1
-
-        # sorting the data based on the scores
-        ranking_data = ranking_data.sort_values('Score', ascending=False).reset_index(drop=True)
-        ranking_data['Overall Rank'] = ranking_data.index + 1
-
-        data_columns = ['Overall Rank', 'Resort ID', 'Resort', 'Country', 'Run Count', 'Price (USD)', 'Peak Elevation (m)', 'Score']
-        final_ranking = ranking_data[data_columns]
-
-        return final_ranking
-    
+        return ranking
+            
 
     """
     This function takes the ranking from users' preferences, and returns their top N resorts
