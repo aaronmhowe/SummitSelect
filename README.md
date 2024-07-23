@@ -57,9 +57,11 @@ https://www.youtube.com/watch?v=iAr4tGEYQZ0&ab_channel=HigherMathematicsLearning
 https://www.youtube.com/watch?v=EGf9bUgl3R8&ab_channel=labmao 
 ### Merging Dataframes
 https://pandas.pydata.org/docs/user_guide/merging.html
-### Argument Parsing in Python Usig argparse
+### Argument Parsing in Python Using argparse
 https://www.geeksforgeeks.org/command-line-option-and-argument-parsing-using-argparse-in-python/
 https://www.youtube.com/watch?v=88pl8TuuKz0&ab_channel=NeuralNine 
+### Additional Aid
+- I utilized generative AI to assist with debugging and researching topics.
 # Project Report
 Report coming soon, containing a more in-depth project overview, why I chose to pursue the project,
 algorithm analysis, and more...
