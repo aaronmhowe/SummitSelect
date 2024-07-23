@@ -1,7 +1,7 @@
 #!/bin/bash
 
 PYTHON_PATH="/usr/bin/python3"
-MAIN="/home/eriksai/Projects/PythonProjects/SummitSelect/src/main.py"
+MAIN_SCRIPT="/home/eriksai/Projects/PythonProjects/SummitSelect/src/main.py"
 RUN_COUNT_DATA="data-sets/resorts_runs.csv"
 PRICE_DATA="data-sets/resorts_prices.csv"
 ELEVATION_DATA="data-sets/resorts_elevation.csv"
@@ -19,7 +19,7 @@ if [ "$#" -eq 3 ]; then
 
     fi
 
-elif [ "$3" -ne 0 ]; then
+elif [ "$#" -ne 0 ]; then
 
     echo "Usage: $0 [run_count_data price_data elevation_data [output_file]]"
     exit 1
@@ -40,4 +40,4 @@ else
 
     echo "Ran into an Error: Problem occurred while executing the program..."
 
-fi 
+fi  
