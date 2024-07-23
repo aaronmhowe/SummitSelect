@@ -106,3 +106,9 @@ Where m represents the different features, and n is the decision criteria. $`w_j
     - So while we do want to find resorts with a higher number of runs, wanting to achieve the lowest possible price takes precedence.
 - Something about this which I would like to note, this result might differ if I took a different approach with taking in user input.
     - I think if I were to instead have user input be on a spectrum (Say for Price, the user can enter 'Absolutely', 'Yes', 'Average', 'Don't Care', 'Don't Care At All), and have the same type of answering for the other criteria, then perhaps the results would be less bias towards another.
+ 
+### Issues With the Results
+
+- I do not believe the results are entirely accurate. When reversing the data from their normalized scores, Sandia Peak being ranked #1 doesn't seem entirely accurate.
+    - With the prompt I gave, I would expect a resort that has a high number of runs, at a lower price, with a lower elevation, but Sandia Peak has one of the lowest run counts on the list, and a relatively high peak elevation, so the only accurate result is its very low price.
+    - My thinking is that the normalization has unintentionally created an extreme bias when computing the weighted sum, as resorts with relatively different values in run count, have been normalized to be equal in run count, thus cannot be ranked properly.
