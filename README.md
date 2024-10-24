@@ -87,26 +87,25 @@ $`A_i^{WSM-score} = \sum_{j=1}^n w_j a_{ij}`$, for $`i = 1, 2, 3, ..., m`$
 Where m represents the different features, and n is the decision criteria. $`w_j`$ denotes the weights and $`a_ij`$ denotes the performance value, which we substitute with the results of z-score normalization.
 
 ### Results
-**First 10 Resorts in Post-Data Pre-Processing**
+**First 10 Resorts in Post-Data Pre-Processing**  
 
-[!Screenshot](SummitSelect_Image_Results/elevation_post_process.JPG)
+![elevation_post_process](https://github.com/user-attachments/assets/ea67c987-b1d0-4ee2-8bea-37439112c3a7)  
+- We can see in these results, the values of each piece of criteria have been normalized and prepared for ranking.  
 
-- We can see in these results, the values of each piece of criteria have been normalized and prepared for ranking.
+**First 5 Resorts After Each Criteria Has Been Ranked (Based on a 'Yes', 'Yes', 'No' Set of Preferences, Respectively)**  
 
-**First 5 Resorts After Each Criteria Has Been Ranked (Based on a 'Yes', 'Yes', 'No' Set of Preferences, Respectively)**
+![top_5_per_criteria](https://github.com/user-attachments/assets/df217e17-5630-480c-98b2-a7d9d034cca9)  
 
-[!Screenshot](SummitSelect_Image_Results/top_5_per_criteria.JPG)
+**First 5 Resorts From the Final Output**  
 
-**First 5 Resorts From the Final Output**
+![final_list](https://github.com/user-attachments/assets/488b4ed7-e563-4c9d-802f-f3d05d91428c)  
 
-[!Screenshot](SummitSelect_Image_Results/final_list.JPG)
- 
 - This has been taken directly from `Ski_Resorts_Results.txt`, while the individual rankings were taken directly from console output.
 - In our final result of a 'yes', 'yes', 'no' set of user preferences, the largest factor in ranking the resorts is found to be pricing.
     - So while we do want to find resorts with a higher number of runs, wanting to achieve the lowest possible price takes precedence.
 - Something about this which I would like to note, this result might differ if I took a different approach with taking in user input.
     - I think if I were to instead have user input be on a spectrum (Say for Price, the user can enter 'Absolutely', 'Yes', 'Average', 'Don't Care', 'Don't Care At All), and have the same type of answering for the other criteria, then perhaps the results would be less bias towards another.
- 
+
 ### Issues With the Results
 
 - I do not believe the results are entirely accurate. When reversing the data from their normalized scores, Sandia Peak being ranked #1 doesn't seem entirely accurate.
